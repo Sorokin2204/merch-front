@@ -1,0 +1,66 @@
+.loader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  animation: pulsOut 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 1rem rgba(86, 111, 254, 0.75));
+}
+.loader:before {
+  width: 100%;
+  padding-bottom: 100%;
+  box-shadow: inset 0 0 0 1rem #566ffe;
+  animation-name: pulsIn;
+}
+.loader:after {
+  width: calc(100% - 2rem);
+  padding-bottom: calc(100% - 2rem);
+  box-shadow: 0 0 0 0 #566ffe;
+}
+
+@keyframes pulsIn {
+  0% {
+    box-shadow: inset 0 0 0 1rem #566ffe;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    box-shadow: inset 0 0 0 0 #566ffe;
+    opacity: 0;
+  }
+}
+
+@keyframes pulsOut {
+  0%,
+  50% {
+    box-shadow: 0 0 0 0 #566ffe;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 1rem #566ffe;
+    opacity: 1;
+  }
+}
+
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1000000;
+}
