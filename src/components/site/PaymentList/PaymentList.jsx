@@ -31,10 +31,10 @@ const PaymentList = () => {
   const { activePayment } = useSelector((state) => state.app);
   return (
     <>
-      <div className="h3 mb-20 mt-20 mx-auto" style={{ maxWidth: '35rem' }}>
-        Способ оплаты
+      <div className="h3 mb-20 mt-20 mx-auto" style={{}}>
+        Способы оплаты
       </div>
-      <div class="card__item " style={{ overflow: 'visible', transform: 'none', maxWidth: '35rem', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(152px,1fr))', gridGap: '10px' }}>
+      <div class="card__item payment-list " style={{ overflow: 'visible', transform: 'none', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr ', gridGap: '10px' }}>
         {dataPayment?.map((payment) => (
           <PaymentItem
             {...payment}

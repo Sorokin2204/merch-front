@@ -6,18 +6,8 @@ const ProductList = () => {
   return (
     <>
       {' '}
-      <div class="mt-100">
+      <div class="mt-0">
         <div class="container">
-          <div class="section__head">
-            <div
-              class="d-md-flex
-							sm:space-y-20
-							space-x-20
-							justify-content-between
-							align-items-center">
-              <h2 class="section__title text-center">Товары</h2>
-            </div>
-          </div>
           <div class="row">
             {productList?.map((item) => (
               <ProductItem {...item} />

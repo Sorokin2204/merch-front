@@ -1,18 +1,16 @@
 $navbar-height: 6rem;
 // ------ Global variable fonts
-$font-primary: "circular_bold";
-$font-secondary: "circular";
+$font-primary: 'Cuprum';
+$font-secondary: 'Cuprum';
 
 // Animation & transitions
 $transition_function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Typography - font families
-$font_main: $font-secondary, -apple-system, sans-serif, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font_code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font_pre: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font_titles: $font-primary, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font_main: $font-secondary, -apple-system, sans-serif, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font_code: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font_pre: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font_titles: $font-primary, -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 // Typography - font sizes
 $font_size_xsmall: 12px;

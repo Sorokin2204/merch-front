@@ -6,6 +6,7 @@ const ShareButton = () => {
   return (
     <div class="space-x-15" style={{ display: 'flex', alignItems: 'center' }}>
       <div class="space-x-15" style={{ display: 'flex', alignItems: 'center', opacity: show ? '1' : '0', visibility: show ? 'visible' : 'hidden', transition: 'all 0.3s' }}>
+        {/* <TikTok */}
         <VKShareButton url={window.location.href}>
           <svg viewBox="0 0 64 64" width="32" height="32">
             <circle cx="32" cy="32" r="32" fill="#4C75A3"></circle>
@@ -47,7 +48,7 @@ const ShareButton = () => {
           }}>
           <a>
             {' '}
-            <i class={`ri-share-line`} style={{ ...(show && { color: ' #566ffe' }), transition: 'all 0.3s' }}></i>
+            <i class={`ri-share-line`} style={{ ...(show && { color: ' #ff9909' }), transition: 'all 0.3s' }}></i>
           </a>
         </div>
       </div>

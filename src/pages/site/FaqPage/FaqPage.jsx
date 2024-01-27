@@ -2,21 +2,18 @@ import React from 'react';
 import styles from './FaqPage.module.scss';
 import { questionData } from '../../../data';
 import AccordionItem from '../../../components/site/AccordionItem/AccordionItem';
+import Title from '../../../components/site/Title/Title';
 const FaqPage = () => {
   return (
     <>
-      <div class="hero_questions bg_white">
-        <div class="container">
-          <div class="space-y-20">
-            <h1 class="text-center">Вопросы и ответы</h1>
+      <Title>Вопросы и ответы</Title>
+      <div class="container">
+        <div className="questions__page col-12 mx-auto ">
+          <div class="questions__box space-y-15">
+            {questionData?.map((question) => (
+              <AccordionItem {...question} />
+            ))}
           </div>
-        </div>
-      </div>{' '}
-      <div className="questions__page col-8 mx-auto mt-100">
-        <div class="questions__box space-y-30">
-          {questionData?.map((question) => (
-            <AccordionItem {...question} />
-          ))}
         </div>
       </div>
     </>

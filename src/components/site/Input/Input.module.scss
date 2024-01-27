@@ -63,11 +63,14 @@
     transform: none !important;
   }
   &.optionsDark {
-    background-color: #0b1b27 !important;
+    background-color: #0c0c0c !important;
     & .option {
       &:hover {
-        background-color: #183b56 !important;
+        background-color: #1e1e1e !important;
       }
+    }
+    & .optionActive {
+      background-color: #1e1e1e !important;
     }
   }
 }

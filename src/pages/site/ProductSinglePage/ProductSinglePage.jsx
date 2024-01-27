@@ -42,7 +42,7 @@ const ProductSinglePage = () => {
   }, [slug]);
   const tabs = [
     { label: 'Описание', value: 1 },
-    { label: 'Спецификация', value: 2 },
+    { label: 'Детали', value: 2 },
     { label: 'Авторы', value: 3 },
   ];
   const [activeTypeCountry, setActiveTypeCountry] = useState({ label: 'Описание', value: 1 });
@@ -147,24 +147,6 @@ const ProductSinglePage = () => {
                     </div>
                   </div>
                 </div> */}
-              <div class="dropdown">
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="https://ipfs.io/" target="_blank">
-                    <span>
-                      <img src="assets/img/icons/ipfs.svg" width="20" alt="" />
-                      View on IPFS
-                    </span>
-                    <i class="ri-external-link-line color_brand"></i>
-                  </a>
-                  <a class="dropdown-item" href="https://etherscan.io/" target="_blank">
-                    <span>
-                      <img src="assets/img/icons/ether.png" width="20" alt="" />
-                      View on Etherscan
-                    </span>
-                    <i class="ri-external-link-line color_brand"></i>
-                  </a>
-                </div>
-              </div>
               <div class="card__item" style={{ transform: 'none', maxWidth: 'none' }}>
                 <div class="space-y-20">
                   {' '}
@@ -173,73 +155,6 @@ const ProductSinglePage = () => {
                   <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel">
                       {activeTypeCountry?.value == 1 ? activeProduct?.desc : activeTypeCountry?.value == 2 ? activeProduct?.specs : activeTypeCountry?.value == 3 ? activeProduct?.authors : <></>}
-                    </div>
-                    <div class="tab-pane" id="tabs-2" role="tabpanel">
-                      <p>No active bids yet. Be the first to make a bid!</p>
-                    </div>
-                    <div class="tab-pane space-y-20" id="tabs-3" role="tabpanel">
-                      <div
-                        class="creator_item creator_card
-													space-x-10">
-                        <div class="avatars space-x-10">
-                          <div class="media">
-                            <div class="badge">
-                              <img src="assets/img/icons/Badge.svg" alt="" />
-                            </div>
-                            <a href="Profile.html">
-                              <img
-                                src="assets/img/avatars/avatar_1.png"
-                                alt="Avatar"
-                                class="avatar
-																	avatar-md"
-                              />
-                            </a>
-                          </div>
-                          <div>
-                            <p class="color_black">
-                              Bid accepted <span class="color_brand">1 ETH</span> by{' '}
-                              <a
-                                class="color_black txt
-																	_bold"
-                                href="Profile.html">
-                                ayoub
-                              </a>
-                            </p>
-                            <span class="date color_text">28/06/2021, 12:08</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="creator_item creator_card
-													space-x-10">
-                        <div class="avatars space-x-10">
-                          <div class="media">
-                            <div class="badge">
-                              <img src="assets/img/icons/Badge.svg" alt="" />
-                            </div>
-                            <a href="Profile.html">
-                              <img
-                                src="assets/img/avatars/avatar_2.png"
-                                alt="Avatar"
-                                class="avatar
-																	avatar-md"
-                              />
-                            </a>
-                          </div>
-                          <div>
-                            <p class="color_black">
-                              Bid accepted <span class="color_brand">3 ETH</span> by{' '}
-                              <a
-                                class="color_black txt
-																	_bold"
-                                href="Profile.html">
-                                monir
-                              </a>
-                            </p>
-                            <span class="date color_text">22/05/2021, 12:08</span>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

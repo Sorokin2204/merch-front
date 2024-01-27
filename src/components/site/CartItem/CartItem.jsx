@@ -21,7 +21,7 @@ const CartItem = ({ image, count, price, name, id }) => {
   }, [clickedCount]);
   return (
     <>
-      <div class="cart-item card__item five" style={{ maxWidth: '35rem', transform: 'none' }}>
+      <div class="cart-item card__item five" style={{ transform: 'none' }}>
         <div class="card_body space-y-10 space-x-10 d-flex">
           <div class="card_head">
             <img src={image[0]} alt="" style={{ transform: 'none' }} />
@@ -66,9 +66,9 @@ const CartItem = ({ image, count, price, name, id }) => {
                 </span>
               </div>
               <a
-                class="btn btn-orange d-flex "
+                class="btn  d-flex "
                 href="#"
-                style={{ marginLeft: 'auto', width: 'min-content' }}
+                style={{ marginLeft: 'auto', width: 'min-content', background: '#eb5757' }}
                 onClick={() => {
                   deleteFromCart({ id });
                   dispatch(setCart(getCartData()));

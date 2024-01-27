@@ -14,6 +14,7 @@ import CartTotal from '../../../components/site/CartTotal/CartTotal';
 import { useDispatch } from 'react-redux';
 import { getPostCountry } from '../../../redux/actions/post/getPostCountry';
 import Loading from '../../../components/site/Loading/Loading';
+import Title from '../../../components/site/Title/Title';
 const CartPage = () => {
   const [showTotal, setShowTotal] = useState(false);
   const { activeTariff, cart } = useSelector((state) => state.app);
@@ -29,18 +30,17 @@ const CartPage = () => {
     <>
       {cart?.length >= 1 ? (
         <>
-          <div class="hero_marketplace bg_white">
-            <div class="container">
-              <h1 class="text-center">Корзина</h1>
+          <Title>Корзина</Title>
+
+          <div class="container">
+            <div className="cart-content">
+              <div class="mt-0">
+                {cart?.map((item) => (
+                  <CartItem {...item} />
+                ))}
+              </div>
+              <PostCalculator />
             </div>
-          </div>
-          <div className="cart-content">
-            <div class="mt-100">
-              {cart?.map((item) => (
-                <CartItem {...item} />
-              ))}
-            </div>
-            <PostCalculator />
           </div>
         </>
       ) : (

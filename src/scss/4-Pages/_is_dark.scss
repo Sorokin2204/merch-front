@@ -77,7 +77,7 @@
   }
   p,
   span {
-    color: #a5afc1;
+    color: #efefef;
   }
   .box.is__live,
   .call2action {
@@ -163,7 +163,7 @@
     background: #edf3f52b;
   }
   .footer__1 .footer__list li a {
-    color: #a5afc1;
+    color: #efefef;
   }
   .card__item.one .card_head .details {
     background: #0d1013;
@@ -221,17 +221,17 @@
     background: $color_black;
     border: none !important;
     .close {
-      background: #345a77;
+      background: #ff9909;
       border: none !important;
     }
   }
   .btn-white,
   .tags,
   .light_bg {
-    border: solid 1px #345a77;
+    border: solid 1px #ff9909;
     &:hover {
-      border: solid 1px #345a77;
-      background: #345a77;
+      border: solid 1px #ff9909;
+      background: #ff9909;
     }
   }
   .card__item .view_history:hover {

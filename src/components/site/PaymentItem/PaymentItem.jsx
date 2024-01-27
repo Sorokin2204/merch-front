@@ -17,7 +17,7 @@ const PaymentItem = ({ name, icon, active, onClick = () => {}, disabled }) => {
           }
         }}
         style={{ opacity: disabled ? '0.5' : 1, cursor: disabled ? 'auto' : 'pointer' }}>
-        {active && <i class="ri-checkbox-circle-fill" style={{ position: 'absolute', right: '4px', top: '0px', fontSize: '20px', color: '#566ffe' }}></i>}
+        <i class="ri-checkbox-circle-fill" style={{ position: 'absolute', right: '4px', top: '0px', fontSize: '20px', color: active ? '#ff9909' : 'rgba(255, 255, 255,0.1)' }}></i>
         <div className={clsx(styles.icons)}>
           <img src={icon}></img>
         </div>{' '}

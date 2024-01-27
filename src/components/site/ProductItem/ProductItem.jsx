@@ -15,7 +15,7 @@ const ProductItem = ({ slug, image, name, price, id }) => {
     <>
       {' '}
       <div class="product-item col-md-6 col-sm-12">
-        <div class="card__item four" style={{ maxWidth: 'none' }}>
+        <div class="card__item four" style={{ padding: 0, maxWidth: 'none' }}>
           <div class="card_body space-y-10">
             <div class="card_head" style={{ height: '30rem', maxHeight: 'auto' }}>
               <Link to={`/product/${slug}`}>
@@ -27,16 +27,16 @@ const ProductItem = ({ slug, image, name, price, id }) => {
               </Link>
             </div>
 
-            <h6 class="card_title">
-              <a class="color_black h5" href="Item-details.html" style={{ fontSize: '30px' }}>
+            <h6 class="card_title" style={{ padding: '0 20px 0 20px' }}>
+              <a class="color_black h5" style={{ cursor: 'pointer', fontSize: '30px' }}>
                 {name}
               </a>
             </h6>
-            <div class="card_footer d-block space-y-10">
+            <div class="card_footer d-block space-y-10" style={{ padding: '0 20px 20px 20px' }}>
               <div class="card_footer justify-content-start">
-                <a href="#" class="">
+                <a class="">
                   <p class="" style={{ fontSize: '24px' }}>
-                    Цена: <span class="color_green ">{currencyFormat(price)}</span>
+                    <span class="color_green ">{currencyFormat(price)}</span>
                   </p>
                 </a>
               </div>

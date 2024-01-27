@@ -16,7 +16,7 @@ const CartTotal = ({ onSubmit }) => {
   return (
     <>
       {' '}
-      <div class="card__item" style={{ overflow: 'visible', transform: 'none', maxWidth: '35rem', margin: '0 auto', marginTop: '20px', position: 'sticky', bottom: '0px', left: 0, zIndex: '1000' }}>
+      <div class="card__item" style={{ overflow: 'visible', transform: 'none', margin: '0 auto', marginTop: '20px', position: 'sticky', bottom: '0px', left: 0, zIndex: '1000' }}>
         <AnimateHeight duration={300} height={showTotal ? 'auto' : 0}>
           {' '}
           <div className="pb-3" style={{}}>

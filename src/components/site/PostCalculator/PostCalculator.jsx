@@ -97,9 +97,9 @@ const PostCalculator = () => {
   console.log(form.formState.errors);
   return (
     <>
-      <div style={{ maxWidth: '35rem', margin: '0 auto' }}>
-        <div className="h3 mb-20">Параметры доставки</div>
-        <div class="card__item" style={{ overflow: 'visible', transform: 'none', maxWidth: '35rem', margin: '0 auto' }}>
+      <div style={{ margin: '0 auto' }}>
+        <div className="h3 mb-20">Оформление доставки</div>
+        <div class="card__item" style={{ overflow: 'visible', transform: 'none', margin: '0 auto' }}>
           <img class="mb-30" src={activeTheme == 'dark' ? 'img/pochta-white.svg' : 'img/pochta.svg'} style={{ width: '140px', height: '20px', display: 'block' }} />
           <div class="mb-30">
             <Tabs list={tabs} active={activeTypeCountry?.value} setActive={setActiveTypeCountry} />
@@ -110,7 +110,7 @@ const PostCalculator = () => {
               isSearch
               form={form}
               name="addressTo"
-              label="Адрес получателя"
+              label="Полный адрес получателя"
               onSearch={(query) => {
                 dispatch(findPostAddresses(query));
               }}
@@ -148,9 +148,8 @@ const PostCalculator = () => {
             name="indexTo"
             label="Индекс"
             isNumber
-            placeholder={'Пример: 429046'}
           />
-          <Input form={form} name="fio" label="Получатель" placeholder={'Пример: Иван Иванов Иванов'} />{' '}
+          <Input form={form} name="fio" label="ФИО получателя полностью" />{' '}
           <Input
             form={form}
             rules={{
@@ -161,8 +160,7 @@ const PostCalculator = () => {
               },
             }}
             name="mail"
-            label={'Почта'}
-            placeholder={'Пример: mail@mail.ru'}
+            label={'Email'}
           />
           <Input
             form={form}
@@ -179,7 +177,6 @@ const PostCalculator = () => {
                 Телефон <span style={{ fontSize: '15px', opacity: '0.7' }}>(необязательно)</span>
               </div>
             }
-            placeholder={'Пример: + 7 (111) 222-33-44'}
             isPhone
           />
           <div style={{ position: 'relative' }}>
@@ -198,7 +195,7 @@ const PostCalculator = () => {
               @
             </div>
           </div>
-          <div className="mt-20" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(254px,1fr))', columnGap: '10px', rowGap: '20px' }}>
+          <div className="mt-20 tariff-list" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: '10px', rowGap: '20px' }}>
             {tariffList?.map((item) => (
               <TariffItem
                 disabled={watchAddressTo?.precision !== 'HOUSE' && !calculateData}

@@ -17,8 +17,7 @@ const TariffItem = ({ loading, days, title, icon, price, active, onClick = () =>
           }
         }}
         style={{ opacity: disabled ? '0.5' : 1, cursor: disabled ? 'auto' : 'pointer' }}>
-        {active && <i class="ri-checkbox-circle-fill" style={{ position: 'absolute', right: '6px', top: '0px', fontSize: '24px', color: '#566ffe' }}></i>}
-
+        <i class="ri-checkbox-circle-fill" style={{ position: 'absolute', right: '6px', top: '0px', fontSize: '24px', color: active ? '#ff9909' : 'rgba(255, 255, 255,0.1)' }}></i>
         <div className={clsx(styles.title)}>
           {title} <br />
           <div className="" style={{ height: '27px' }}>
@@ -31,7 +30,6 @@ const TariffItem = ({ loading, days, title, icon, price, active, onClick = () =>
         <div className={clsx(styles.text)}>
           От пункта отправки <br /> до пункта выдачи
         </div>
-
         <div className={clsx(styles.price)}> {loading ? <Skeleton width={54} height={26} /> : price ? currencyFormat(price) : <i class="ri-subtract-line" style={{ fontSize: '20px' }}></i>}</div>
       </div>
     </>
