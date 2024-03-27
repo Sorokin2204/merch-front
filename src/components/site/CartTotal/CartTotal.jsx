@@ -70,13 +70,7 @@ const CartTotal = ({ onSubmit }) => {
               onClick={() => {
                 setShowTotal(!showTotal);
               }}></i>
-            {calculateLoading ? (
-              <Skeleton style={{ transform: 'translate(4px,-1px)' }} height={30} width={100} />
-            ) : (
-              <h3 className="" style={{ paddingLeft: '10px' }}>
-                {currencyFormat(parseInt(totalSumCart()) + parseInt(activeTariff?.price ?? 0))}
-              </h3>
-            )}
+            {calculateLoading ? <Skeleton style={{ transform: 'translate(4px,-1px)' }} height={30} width={100} /> : <h3 style={{ color: '#36b37e', paddingLeft: '10px' }}>{currencyFormat(parseInt(totalSumCart()) + parseInt(activeTariff?.price ?? 0))}</h3>}
           </div>
           <button class={`btn ${!activeTariff || !activePayment ? 'btn-disabled' : 'btn-green'}  btn-lg d-flex `} onClick={onSubmit} style={{ marginLeft: 'auto', width: 'min-content' }}>
             Оплатить

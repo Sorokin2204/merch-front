@@ -69,14 +69,14 @@ function App() {
         </SiteLayout>
       ),
     },
-    {
-      path: '/faq',
-      element: (
-        <SiteLayout>
-          <FaqPage />
-        </SiteLayout>
-      ),
-    },
+    // {
+    //   path: '/faq',
+    //   element: (
+    //     <SiteLayout>
+    //       <FaqPage />
+    //     </SiteLayout>
+    //   ),
+    // },
     {
       path: '/contact',
       element: (

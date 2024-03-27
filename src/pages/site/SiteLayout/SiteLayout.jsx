@@ -49,19 +49,19 @@ const SiteLayout = ({ children }) => {
                 </Link>
               </div>
               <div class="header__menu">
-                <ul class="d-flex space-x-20">
+                <ul class="d-flex space-x-25" style={{ fontWeight: '600' }}>
                   <li>
                     <Link to="/products" class="color_black">
                       {' '}
                       Магазин{' '}
                     </Link>
                   </li>{' '}
-                  <li>
+                  {/* <li>
                     <Link to="/faq" class="color_black">
                       {' '}
                       FAQ{' '}
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/contact" class="color_black">
                       {' '}
@@ -134,7 +134,7 @@ const SiteLayout = ({ children }) => {
                           Магазин{' '}
                         </Link>
                       </li>{' '}
-                      <li>
+                      {/* <li>
                         {' '}
                         <Link
                           onClick={() => {
@@ -145,7 +145,7 @@ const SiteLayout = ({ children }) => {
                           {' '}
                           FAQ{' '}
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         {' '}
                         <Link
@@ -176,13 +176,15 @@ const SiteLayout = ({ children }) => {
                   </a>
                 </div>
                 <p class="footer__text">
-                  Играем, и с любовью делаем мерчи<i class="ri-heart-fill" style={{ fontSize: '15px', marginLeft: '3px', color: '#eb5757' }}></i>
+                  Играем и делаем классные штуки<i class="ri-heart-fill" style={{ fontSize: '15px', marginLeft: '3px', color: '#eb5757' }}></i>
                 </p>
                 <div>
                   <ul class="footer__social space-x-15 mb-20">
                     {socialData?.map((social) => (
                       <li>
-                        <Link to={social?.link}>{social?.icon}</Link>
+                        <a target="_blank" href={social?.link}>
+                          {social?.icon}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -196,14 +198,14 @@ const SiteLayout = ({ children }) => {
                   </li>
                 </ul>
               </div>{' '}
-              <div class="col-lg-2 col-12 ">
+              {/* <div class="col-lg-2 col-12 ">
                 <ul class="footer__list" style={{ paddingTop: '55px' }}>
                   <li>
                     {' '}
                     <Link to="/faq"> FAQ </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div class="col-lg-2 col-12">
                 <ul class="footer__list" style={{ paddingTop: '55px' }}>
                   <li>

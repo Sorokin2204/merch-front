@@ -9,12 +9,12 @@ const ContactPage = () => {
       <Title>Контакты</Title>
       <div class="container">
         <div className="contact-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div class="more" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px' }}>
+          <div class="more" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridGap: '20px', width: '100%' }}>
             {socialData?.map(({ link, icon, name }) => (
               <div class="more_box visible position-relative d-flex justify-content-start align-items-center " style={{ height: '100px', padding: '20px' }}>
                 <ul class="space-y-10">
                   <li>
-                    <Link to={link} class="space-x-10 d-flex">
+                    <Link target="_blank" to={link} class="space-x-10 d-flex">
                       {icon}
                       {/* <i class={icon} style={{ color: '#ff9909', fontSize: '30px' }}></i> */}
                       <span style={{ fontSize: '20px' }}> {name}</span>
@@ -23,7 +23,7 @@ const ContactPage = () => {
                 </ul>
               </div>
             ))}
-            <div className="article_page" style={{ margin: '0 auto', gridColumn: '1/3', marginTop: '40px' }}>
+            {/* <div className="article_page" style={{ margin: '0 auto', gridColumn: '1/3', marginTop: '40px' }}>
               <div className="content" style={{ padding: '10px 0 30px 0' }}>
                 <div className="inner">
                   <div className="snippet">
@@ -34,7 +34,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

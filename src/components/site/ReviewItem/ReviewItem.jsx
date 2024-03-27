@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ReviewItem.module.scss';
 import moment from 'moment';
-const ReviewItem = ({ author, text, date }) => {
+const ReviewItem = ({ author, text, date, link }) => {
   return (
     <>
       <div>
@@ -15,7 +15,7 @@ const ReviewItem = ({ author, text, date }) => {
               </a>
             </div> */}
             <div class="text-center">
-              <a href="Profile.html">
+              <a href={link} target="_blank">
                 <p class="avatars_name color_brand">{author}</p>
               </a>
             </div>

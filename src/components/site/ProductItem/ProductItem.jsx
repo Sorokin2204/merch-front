@@ -8,7 +8,7 @@ import { setCart } from '../../../redux/slices/app.slice';
 import { getCartData } from '../../../utils/getCartData';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../../utils/addToCart';
-const ProductItem = ({ slug, image, name, price, id }) => {
+const ProductItem = ({ prev, slug, image, name, price, id }) => {
   const { cart } = useSelector((state) => state.app);
   const dispatch = useDispatch();
   return (
@@ -20,7 +20,7 @@ const ProductItem = ({ slug, image, name, price, id }) => {
             <div class="card_head" style={{ height: '30rem', maxHeight: 'auto' }}>
               <Link to={`/product/${slug}`}>
                 <img
-                  src={image[0]}
+                  src={prev}
                   alt="item
 												img"
                 />
@@ -28,9 +28,9 @@ const ProductItem = ({ slug, image, name, price, id }) => {
             </div>
 
             <h6 class="card_title" style={{ padding: '0 20px 0 20px' }}>
-              <a class="color_black h5" style={{ cursor: 'pointer', fontSize: '30px' }}>
+              <Link to={`/product/${slug}`} class="color_black h5" style={{ cursor: 'pointer', fontSize: '30px' }}>
                 {name}
-              </a>
+              </Link>
             </h6>
             <div class="card_footer d-block space-y-10" style={{ padding: '0 20px 20px 20px' }}>
               <div class="card_footer justify-content-start">

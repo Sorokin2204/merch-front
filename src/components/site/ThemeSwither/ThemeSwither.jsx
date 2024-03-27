@@ -14,7 +14,7 @@ const ThemeSwither = () => {
           style={{ cursor: 'pointer', userSelect: 'none', width: '38px', height: '31px' }}
           onClick={() => {
             dispatch(setActiveTheme('light'));
-            localStorage.removeItem('theme-dark');
+            localStorage.setItem('theme-dark', 'light');
           }}
           class={`light d-flex align-items-center  ${activeTheme == 'light' ? 'is_active' : ''}`}>
           <i class="ri-sun-fill" style={{ marginRight: 0, paddingLeft: '1px' }}></i>
@@ -23,7 +23,7 @@ const ThemeSwither = () => {
           style={{ cursor: 'pointer', userSelect: 'none', width: '38px', height: '31px' }}
           onClick={() => {
             dispatch(setActiveTheme('dark'));
-            localStorage.setItem('theme-dark', true);
+            localStorage.setItem('theme-dark', 'dark');
           }}
           class={`dark d-flex align-items-center ${activeTheme == 'dark' ? 'is_active' : ''}`}>
           <i class="ri-moon-fill" style={{ marginRight: 0, marginLeft: '1px' }}></i>

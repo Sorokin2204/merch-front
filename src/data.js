@@ -2,46 +2,90 @@ export const productList = [
   {
     id: 1,
     name: 'Карточная игра МАФИЯ',
-    slug: 'mafia',
-    image: ['/img/product-1.jpg'],
+    slug: 'kartochnaya-igra-mafiya',
+    prev: '/img/game-1-prev.jpg',
+    image: ['/img/m1.jpg', '/img/m2.jpg', '/img/m3.jpg'],
     price: 1200,
     weight: 100,
-    desc: <>Описание</>,
-    specs: <>Спецификация</>,
-    authors: <>Авторы</>,
+    desc: (
+      <>
+        Игровая колода "Мафия" <br />
+        Иллюстрации карт созданы по мобильной игре и фандому Identity V. <br /> <br /> Колода состоит из 14 карт: 6 Мирных жителей, 2 Мафии, Дон, Комиссар, Любовница (путана), Доктор, Маньяк и карта Ведущего.
+        <br /> Красивые авторские иллюстрации расскажут вам историю исследователя, который в поисках зеркала принцессы Лэчан пребывает в Чайна-Таун, полным страшным тайн и загадок.
+      </>
+    ),
+    specs: (
+      <>
+        • 14 карт из плотного картона <br />• Глянцевая ламинация, защищающая от стирания <br />• Поверхность не оставляет царапин <br />• Золотое напыление на рубашке карт <br />• Инструкция внутри <br />• Сюжетная история внутри <br />• Размер 70x140 мм
+      </>
+    ),
+    authors: (
+      <>
+        Идея и разработка: GAMIGOODS <br /> Иллюстрации: Егор Косых
+      </>
+    ),
     content: (
       <>
         <p>
-          {' '}
-          <h3>Irure velit amet ullamco ad non laboris ea nostrud ullamco veniam.</h3>
+          Добро пожаловать в мир, где ароматы специй сливаются с шумом улиц, где каждый уголок хранит свою историю, а резные драконы украшают старинные здания. Там узкие улочки переполнены древними артефактами, восточными сокровищами, чайными домиками и уютными лавками чудес. Это удивительное место,
+          таинственный квартал Чайна-Таун, где восток встречает Запад под светом красных фонарей. Почувствуйте дыхание старинной культуры и окунитесь в незабываемое путешествие тайн и загадок.
+          <br />
+          <br />
+          Вырезка из путеводителя ресторана «Хрустящая утка» 12 июля 1895 года
         </p>
-        <img class="img_article" src={'http://localhost:3000/img/product-1.jpg'} />
+        <img class="img_article" src={'/img/mafia1.jpg'} />
         <p>
-          <strong>Handshake release assets</strong>&nbsp;validation metrics first mover advantage ownership prototype. Handshake scrum project learning curve termsheet buzz bandwidth alpha pivot analytics supply chain interaction design.&nbsp; Pitch analytics assets. <a href="#">Link</a>
-        </p>
+          Колода интеллектуальной игры "Мафия" с персонажами игры Identity V, разработанная и придуманная нами. Колода может использоваться как полноценная игровая, а также как коллекционный набор или в подарок! Такая колода будет украшением любой вечеринки или посиделок с друзьями! А ещё это лучший
+          подарок в коллекцию самому себе!
+        </p>{' '}
+        <img class="img_article" src={'/img/mafia2.jpg'} />
+        <p>
+          В колоде представлены: 6 мирных жителей: <br />— Лаки Гай, главный герой <br />— Путешественник <br />— Слепая, жена путешественника <br />— Лука Бальза, обслуживает красные фонари в Чайна Тауне <br />— Садовница, официант ресторана <br />— Маленькая девочка, пропала при загадочных
+          обстоятельствах <br />— Доктор, владелица клиники
+          <br />— Путана, она же Парфюмер, девушка легкого поведения <br />— Маньяк, он же Наемник, был замечен в темных переулках <br />— Комиссар, он же Детектив, расследует дело <br />— 2 Мафии, братья Черно-Белых <br />— Дон, Джек потрошитель, прибыл с братьями в Чайна Таун по темным делам{' '}
+          <br />— И карта ведущего, представленная Мисс Найтингейл
+        </p>{' '}
+        <img class="img_article" src={'/img/mafia3.jpg'} />
+        <p>
+          Когда-то Чайна-таун был излюбленным местом туристов, но с недавних пор этот район стали обходить стороной. Загадочное исчезновение маленькой девочки повлекло за собой череду покрытых тайнами и слухами событий, что вспыхивают во тьме, словно мерцающие красные огни фонарей, и оставляют после
+          себя лишь запустение и одинокие блуждающие силуэты. Погрузитесь в мрачную историю и разгадайте все её секреты.
+        </p>{' '}
+        <img class="img_article" src={'/img/mafia4.jpg'} />
+        <p>Наша колода Мафии не только развлечет вас и ваших друзей, но и украсит любую вечеринку!</p> <img class="img_article" src={'/img/mafia5.jpg'} />
       </>
     ),
   },
   {
     id: 2,
     name: 'Календарь 2024 – Identity V',
-    slug: 'mafia2',
-    image: ['/img/product-1.jpg'],
-    price: 222,
+    slug: 'kalendar-2024-identity-v',
+    prev: '/img/game-2-prev.jpg',
+    image: ['/img/c1.jpg', '/img/c2.jpg', '/img/c3.jpg'],
+    price: 1500,
     weight: 222,
-    desc: <>Описание</>,
-    specs: <>Спецификация</>,
-    authors: <>Авторы</>,
+    desc: (
+      <>
+        Календарь на 2024 год "Зов Бездны. Альтернатива". Создам по мотивам игры Identity V. <br /> 12 листов с красивыми иллюстрациями и сотнями мелких деталей. <br /> Проект является иллюстрированным комиксом, в котором вы узнаете, как в деревню Выживших пришла Бездна, и с какими последствиями
+        столкнулись наши герои.
+      </>
+    ),
+    specs: (
+      <>
+        • 12 листов с иллюстрациями <br />• Глянцевая поверхность листов <br />• Все персонажи Identity V <br />• Полная сюжетная история <br />• Формат А3 <br />
+      </>
+    ),
+    authors: (
+      <>
+        Идея и разработка: GAMIGOODS <br /> Иллюстрации: Алиса Кроберт
+      </>
+    ),
     content: (
       <>
-        <p>
-          {' '}
-          <h3>Irure velit amet ullamco ad non laboris ea nostrud ullamco veniam.</h3>
-        </p>
-        <img class="img_article" src={'http://localhost:3000/img/product-1.jpg'} />
-        <p>
-          <strong>Handshake release assets</strong>&nbsp;validation metrics first mover advantage ownership prototype. Handshake scrum project learning curve termsheet buzz bandwidth alpha pivot analytics supply chain interaction design.&nbsp; &nbsp;Pitch analytics assets. <a href="#">Link</a>
-        </p>
+        <p>Каждый месяц погода и окружение локации будет меняться, а персонажи Identity V будут участвовать в различных ситуациях и событиях. Тут вам и: шуточные отсылки, неожиданные сюжетные повороты, праздничное торжество, раскрытие главных персонажей и многое другое.</p>
+        <img class="img_article" src={'/img/1.jpg'} />
+        <p>Узнай полную историю, как Офицер выловил из озера кристалл Бездны, принес его в деревню, и что случилось после.</p>
+        <img class="img_article" src={'/img/2.jpg'} />
+        <p>12 красочных иллюстраций на каждый месяц, сотни отрисованных объектов, абсолютно все персонажи Identity V задействованы в историях.</p> <img class="img_article" src={'/img/3.jpg'} />
       </>
     ),
   },
@@ -59,10 +103,10 @@ export const socialData = [
     name: (
       <div>
         {' '}
-        Вконтакте <b style={{ color: '#ff9909' }}>mafia_tiktok</b>
+        Вконтакте <b style={{ color: '#ff9909' }}>gamigoods</b>
       </div>
     ),
-    link: '',
+    link: 'https://vk.com/gamigoods',
   },
   {
     icon: (
@@ -77,56 +121,66 @@ export const socialData = [
     name: (
       <div>
         {' '}
-        Telegram <b style={{ color: '#ff9909' }}>@mafia_telg</b>
+        Telegram <b style={{ color: '#ff9909' }}>@gamigoods</b>
       </div>
     ),
-    link: '',
+    link: 'https://t.me/gamigoods',
   },
   {
     icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%' }} src={'/img/tiktok.png'} />,
     name: (
       <div>
         {' '}
-        TikTok <b style={{ color: '#ff9909' }}>@mafia_tikt</b>
+        TikTok <b style={{ color: '#ff9909' }}>@gamigoods</b>
       </div>
     ),
-    link: '',
+    link: 'https://www.tiktok.com/@gamigoods',
   },
   {
-    icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'contain' }} src={'/img/youtube.svg'} />,
+    icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%', transform: 'scale(1.3)' }} src={'/img/gmail-2.svg'} />,
     name: (
       <div>
         {' '}
-        YouTube <b style={{ color: '#ff9909' }}>@mafia_youtube</b>
+        Gmail <b style={{ color: '#ff9909' }}>gamigoods.ru@gmail.com</b>
       </div>
     ),
-    link: 'https://www.youtube.com/@vladkozyra',
+    link: 'mailto:gamigoods.ru@gmail.com',
   },
-  {
-    icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'contain' }} src={'/img/instagram.svg'} />,
-    name: (
-      <div>
-        {' '}
-        Instagram <b style={{ color: '#ff9909' }}>@mafia_instagram</b>
-      </div>
-    ),
-    link: 'https://www.youtube.com/@vladkozyra',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 64 64" width="32" height="32">
-        <circle cx="32" cy="32" r="32" fill="#000000"></circle>
-        <path d="M 41.116 18.375 h 4.962 l -10.8405 12.39 l 12.753 16.86 H 38.005 l -7.821 -10.2255 L 21.235 47.625 H 16.27 l 11.595 -13.2525 L 15.631 18.375 H 25.87 l 7.0695 9.3465 z m -1.7415 26.28 h 2.7495 L 24.376 21.189 H 21.4255 z" fill="white"></path>
-      </svg>
-    ),
-    name: (
-      <div>
-        {' '}
-        X <b style={{ color: '#ff9909' }}>@mafia_x</b>
-      </div>
-    ),
-    link: 'https://www.youtube.com/@vladkozyra',
-  },
+  // {
+  //   icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'contain' }} src={'/img/youtube.svg'} />,
+  //   name: (
+  //     <div>
+  //       {' '}
+  //       YouTube <b style={{ color: '#ff9909' }}>@mafia_youtube</b>
+  //     </div>
+  //   ),
+  //   link: 'https://www.youtube.com/@vladkozyra',
+  // },
+  // {
+  //   icon: <img style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'contain' }} src={'/img/instagram.svg'} />,
+  //   name: (
+  //     <div>
+  //       {' '}
+  //       Instagram <b style={{ color: '#ff9909' }}>@mafia_instagram</b>
+  //     </div>
+  //   ),
+  //   link: 'https://www.youtube.com/@vladkozyra',
+  // },
+  // {
+  //   icon: (
+  //     <svg viewBox="0 0 64 64" width="32" height="32">
+  //       <circle cx="32" cy="32" r="32" fill="#000000"></circle>
+  //       <path d="M 41.116 18.375 h 4.962 l -10.8405 12.39 l 12.753 16.86 H 38.005 l -7.821 -10.2255 L 21.235 47.625 H 16.27 l 11.595 -13.2525 L 15.631 18.375 H 25.87 l 7.0695 9.3465 z m -1.7415 26.28 h 2.7495 L 24.376 21.189 H 21.4255 z" fill="white"></path>
+  //     </svg>
+  //   ),
+  //   name: (
+  //     <div>
+  //       {' '}
+  //       X <b style={{ color: '#ff9909' }}>@mafia_x</b>
+  //     </div>
+  //   ),
+  //   link: 'https://www.youtube.com/@vladkozyra',
+  // },
 ];
 export const questionData = [
   {

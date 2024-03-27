@@ -7,7 +7,7 @@ import { getCartData } from '../../../utils/getCartData';
 import { useDispatch } from 'react-redux';
 import { removeToCart } from '../../../utils/removeToCart';
 import { deleteFromCart } from '../../../utils/deleteFromCart';
-const CartItem = ({ image, count, price, name, id }) => {
+const CartItem = ({ prev, image, count, price, name, id }) => {
   const [clickedCount, setClickedCount] = useState(null);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -24,7 +24,7 @@ const CartItem = ({ image, count, price, name, id }) => {
       <div class="cart-item card__item five" style={{ transform: 'none' }}>
         <div class="card_body space-y-10 space-x-10 d-flex">
           <div class="card_head">
-            <img src={image[0]} alt="" style={{ transform: 'none' }} />
+            <img src={prev} alt="" style={{ transform: 'none' }} />
           </div>
 
           <div

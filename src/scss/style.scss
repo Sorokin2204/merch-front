@@ -76,7 +76,7 @@
   color: $color_brand !important;
   font-family: 'remixicon' !important;
   border-radius: 50%;
-  box-shadow: -30px 2px 4px rgba(126, 142, 177, 0.1215686275) !important;
+  box-shadow: none !important;
   background: white;
   border: solid 1px rgba(10, 33, 65, 0.05);
   font-size: 22px !important;
@@ -131,7 +131,7 @@
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: rgba(24, 59, 86, 0.4);
+  background-color: #ff9909;
 }
 .privacy__page {
   & h3 {
@@ -298,9 +298,11 @@
     }
   }
 }
-
 .header__1 .header__mobile {
   z-index: 10000;
+}
+.is__dark .header__1 .header__mobile {
+  background: #1e1e1e !important;
 }
 .cart-content {
   & .card__item {
@@ -331,4 +333,74 @@
 .footer__1 .footer__social img {
   border: none !important;
   background: none !important;
+}
+.is__dark .hero__1 {
+  background-color: $color_dark !important;
+}
+.is__dark .more .more_box {
+  background-color: #1e1e1e !important;
+}
+.is__dark .forum__content .reaction .time i,
+.is__dark .forum__content .reaction .time span {
+  color: rgba(256, 256, 256, 0.3) !important;
+}
+.hero__1 {
+  & h1 {
+    text-align: center;
+  }
+  & h3 {
+    text-align: center;
+  }
+  padding-bottom: 0px !important;
+  & img {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    object-fit: contain;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__1 {
+    padding-bottom: 30px;
+    & img {
+      margin-top: 30px;
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+.is__dark a:hover {
+  color: $color_brand;
+}
+.is__dark .card_head {
+  background-color: #1e1e1e !important;
+}
+@media (min-width: 769px) {
+  .article_page .content .inner p {
+    font-size: 19px !important;
+  }
+}
+
+.article_page .content {
+  border: none !important;
+}
+.is__dark .nav-tabs .nav-item a.active,
+.is__dark .nav-tabs .nav-item a.active:hover {
+  border: solid 1px #ff9909 !important;
+}
+.is__dark .nav-tabs .nav-item a {
+  border: solid 1px transparent !important;
+}
+.is__dark .nav-tabs .nav-item a:hover {
+  background-color: transparent !important;
+  border: solid 1px transparent !important;
+}
+.footer__1 .footer__list li a:hover {
+  color: $color_brand !important;
+}
+.law-text {
+  & h3 {
+    margin-bottom: 10px;
+  }
 }

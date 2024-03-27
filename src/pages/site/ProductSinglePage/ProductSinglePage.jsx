@@ -76,15 +76,11 @@ const ProductSinglePage = () => {
               </a>
             </div> */}
             <Swiper {...params}>
-              <div>
-                <img class="item_img" src={activeProduct?.image[0]} alt="" />
-              </div>
-              <div>
-                <img class="item_img" src={activeProduct?.image[0]} alt="" />
-              </div>
-              <div>
-                <img class="item_img" src={activeProduct?.image[0]} alt="" />
-              </div>
+              {activeProduct?.image?.map((item) => (
+                <div>
+                  <img class="item_img" src={item} alt="" />
+                </div>
+              ))}
             </Swiper>
           </div>
 
@@ -162,7 +158,7 @@ const ProductSinglePage = () => {
               {/* <div class="hr2"></div> */}
               <div class="d-flex space-x-20">
                 <div className="h3" style={{ fontWeight: '600' }}>
-                  {currencyFormat(200)}
+                  {currencyFormat(activeProduct?.price)}
                 </div>
               </div>{' '}
               {cart?.find((cartItem) => cartItem?.id == activeProduct?.id) ? (
@@ -188,9 +184,9 @@ const ProductSinglePage = () => {
           </div>
         </div>
       </div>
-      <h2 class="col-8 mx-auto mt-50 mb-20">Описание</h2>
-      <div className="article_page" style={{ margin: '0 auto' }}>
-        <div className="content" style={{ padding: '10px 0 30px 0' }}>
+
+      <div className=" article_page" style={{ margin: '0 auto', marginTop: '40px' }}>
+        <div className="content" style={{ padding: '10px 0 0px 0' }}>
           <div className="inner">
             <div className="snippet">{activeProduct?.content}</div>
           </div>

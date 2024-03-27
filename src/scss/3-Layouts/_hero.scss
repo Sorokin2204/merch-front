@@ -1,21 +1,22 @@
 .hero__1 {
   overflow: hidden;
   position: relative;
-  background: $color_white;
+  background: transparent;
   box-shadow: $shadow_1;
   z-index: 0;
-  @include before {
-    left: 0;
-    background: url(../../../public/img/in_hero1.png);
-    width: 476px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
-    @include tablet_vert_screen {
-      display: none;
-    }
-  }
+  box-shadow: none;
+  // @include before {
+  //   left: 0;
+  //   background: url(../../../public/img/in_hero1.png);
+  //   width: 476px;
+  //   height: 100%;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   z-index: -1;
+  //   @include tablet_vert_screen {
+  //     display: none;
+  //   }
+  // }
   .hero__left {
     padding: 100px 0;
     @include tablet_vert_screen {

@@ -5,7 +5,7 @@ export const initialState = {
   ...initStateGetProductReviews,
   activeTariff: null,
   cart: null,
-  activeTheme: localStorage.getItem('theme-dark') ? 'dark' : 'light',
+  activeTheme: localStorage.getItem('theme-dark') == 'dark' || !localStorage.getItem('theme-dark') ? 'dark' : 'light',
   activePayment: null,
   clickedChangeCount: null,
 };

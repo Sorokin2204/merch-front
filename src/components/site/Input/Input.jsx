@@ -47,6 +47,7 @@ const Input = ({ label, placeholder, isPhone, isSearch, isSelect, grey, lg, name
       return null;
     }
   };
+
   console.log(watchVal);
   return (
     <>
@@ -104,9 +105,14 @@ const Input = ({ label, placeholder, isPhone, isSearch, isSelect, grey, lg, name
                     <div
                       className={clsx(styles.option)}
                       onClick={() => {
-                        setSearchTerm(item?.label);
-                        setShowOptions(false);
-                        onClickOption(item);
+                        if (watchVal?.label == item?.label) {
+                          setShowOptions(false);
+                          callPostCalculator(watchVal);
+                        } else {
+                          setSearchTerm(item?.label);
+                          setShowOptions(false);
+                          onClickOption(item);
+                        }
                       }}>
                       <Interweave content={item?.label?.replace(new RegExp(searchTerm, 'ig'), `<b>${searchTerm}</b>`)} />
                     </div>
